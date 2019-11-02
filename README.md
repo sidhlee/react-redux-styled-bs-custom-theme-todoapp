@@ -19,7 +19,8 @@ While creating this app, I have learned about:
   - Form, Form.Group, Form.Label, Form.Control, Button
   - Nav(`variant="pills"`), Nav.Item, and Nav.Link
 - Also, when working with svg's in react you have to import svg as React Component and style it as you need.
-  `/src/components/Logo.js`
+  `/src/components/Logo.js`  
+  
   ```node
   import { ReactComponent as Notepad } from "../notepad.svg";
 import styled from "styled-components";
@@ -28,7 +29,8 @@ export default styled(Notepad)`
   height: 40px;
   margin-right: 0.5em;
 `;
-```
+```  
+
 `/src/components/NavBar.js`
 ```JSX
 import React from "react";
