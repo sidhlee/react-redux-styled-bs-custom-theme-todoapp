@@ -23,28 +23,29 @@ While creating this app, I have learned about:
   
   ```node
   import { ReactComponent as Notepad } from "../notepad.svg";
-import styled from "styled-components";
+  import styled from "styled-components";
 
-export default styled(Notepad)`
-  height: 40px;
-  margin-right: 0.5em;
-`;
-```  
+  export default styled(Notepad)`
+    height: 40px;
+    margin-right: 0.5em;
+  `;
+  ```  
 
-`/src/components/NavBar.js`
-```JSX
-import React from "react";
-import Navbar from "react-bootstrap/Navbar";
-import Logo from "./Logo";
-const NavBar = () => (
-  <>
-    <Navbar bg="dark" variant="dark">
-      <Navbar.Brand>
-        <Logo /> Todo App
-      </Navbar.Brand>
-    </Navbar>
-  </>
-);
+  `/src/components/NavBar.js`  
+  
+  ```JSX
+  import React from "react";
+  import Navbar from "react-bootstrap/Navbar";
+  import Logo from "./Logo";
+  const NavBar = () => (
+    <>
+      <Navbar bg="dark" variant="dark">
+        <Navbar.Brand>
+          <Logo /> Todo App
+        </Navbar.Brand>
+      </Navbar>
+    </>
+  );
 
-export default NavBar;
-```
+  export default NavBar;
+  ```
